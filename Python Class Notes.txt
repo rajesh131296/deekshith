@@ -1,0 +1,425 @@
+============
+python
+=============
+DataTypes
+operators
+flow -control statements
+	conditional statements
+	loops statements
+functions
+special functions
+modules
+packages
+oops(object oriented principles)
+		class and object	
+		inheritance
+		Encapsulation
+		abstraction
+		polymorphism
+File handling
+PDBC(python database connection)
+multi-threading
+
+
+Features of python:
+---------------------
+
+1.python is a both programming language and scripting language.
+2.python is a simple programming language
+	Easy to read
+	Easy to write
+	Easy to learn
+	
+3.python is a Free of cost and open-source
+here, we can download python software with free of cost
+software(backend code/source code)
+open-source --->we can download and we can customize the source code.
+
+CPYTHON -->
+iron-python
+micro-python
+Jython
+
+4.platform independent programming language
+here, platform is OS(Operating system)
+
+C,C++ --->platform dependent programming languages
+
+compilation       ---> windows
+interpretation(execution) --->linux/mac os
+
+
+5.python is a high-level programming language.
+
+low-level language- binary code (0 1)
+
+low level language can understand by systems but can not by humans
+
+
+high-level language- human readable language
+
+high-level language can understandable by humans but can not understandable by systems.
+
+
+6.python is a Dynamically typed programming language.
+
+In python no need to mention a datatype before assigning the value into a object.
+
+static typed programming language.
+
+int a = 100
+
+str a = 'rajesh' -->not valid
+
+Dynamically typed programming language.
+
+a = 100
+
+a = 'rajesh'
+
+a = 15.25
+
+a = 'vinay'
+
+a = 100
+
+
+print(a)
+
+7.python is supported both procedural and object -oriented programming language.
+
+functions
+classes
+
+
+8.python is line-by-line interpreted programming language.
+
+9.python is a extensible  and embedded programming language.
+
+10.python supports large no.of libraries.
+(more than 1,37,000 libraries)
+
+
+college library          software library
+-------------------     -------------------
+books                          code(collection of objects,functions,classes)
+shelfs                         modules
+rooms                          packages
+
+
+
+object/variables
+functions/methods
+
+
+===========
+DataTypes:
+===========
+what is Datatype?
+It is a type of value(data) hold by the variable/object.
+
+
+In python we have 14 datatypes.
+In python we have 2 categories of datatypes	
+		1)Fundamental datatypes
+		
+		2)collection / sequence /data structures
+		we can stores multiple values at a time
+		
+		
+1)Fundamental datatypes:
+----------------------------
+In fundamental datatypes we can store  only single values at a time.
+	we have 5 datatypes in fundamental datatypes
+			1)int   ---interger
+			2)float
+			3)bool  --- boolean
+			4)complex
+			5)str   --- string
+
+2)collection / sequence /data structures:
+--------------------------------------------
+In 	collection datatype	we can stores multiple values at a time
+				6)range
+				7)bytes
+				8)bytearray
+				9)list
+				10)tuple
+				11)set
+				12)frozenset
+				13)dict  --- dictionary
+				14)None
+
+
+
+these 14 datatypes segregated into 5 categories
+
+1)int   ---interger
+2)float
+3)bool  --- boolean
+4)complex
+5)str   --- string
+
+range type datatype:
+----------------------
+6)range
+
+byte type datatype:
+--------------------
+7)bytes
+8)bytearray
+
+sequence datatypes:
+---------------------
+9)list
+10)tuple
+
+set type datatypes:
+-------------------------
+11)set
+12)frozenset
+
+mapping datatype:
+-------------------
+13)dict  --- dictionary
+
+None Type:
+-------------
+14)None
+
+
+
+Fundamental datatypes:
+--------------------------
+In fundamental datatypes we can store  only single values at a time.
+	we have 5 datatypes in fundamental datatypes
+			1)int   ---interger
+			2)float
+			3)bool  --- boolean
+			4)complex
+			5)str   --- string
+			
+			
+1)int:
+--------
+int is a fundamnetal datatype in python.
+int can stores only single value at a time.
+int datatype stores only numbers.it can not stores other than numbers.
+
+
+ex:
+----
+100
+697
+596
+
+float:
+-------
+float is a fundamnetal datatype in python.
+float can stores only single value at a time.
+float datatype stores decimal values only.it can not stores other than decimal values.
+
+ex:
+----
+100.25
+697.34
+596.987456
+
+bool:
+------
+bool is a fundamnetal datatype in python.
+bool can stores only single value at a time.
+bool datatype stores eiter "True" or "False".other than these values it can not stores.
+
+
+ex:
+-----
+True  -- 1
+False -- 0
+
+complex:
+---------
+complex is a fundamnetal datatype in python.
+complex datatype stores complex structured data.
+
+syntax:
+-------
+		a+bj
+		
+		a - real part
+		b - imaginary part
+		j - constatnt
+		
+Note:
+------
+in the real part and imaginary part we can take only numerical values, we can not take str values.
+
+
+ex:
+----
+
+15+36j     -- valid
+16.5+89.57j  -- valid
+True + 45j -- valid
+True+Falsej --- invalid
+False+Truej --- invalid
+
+
+str:
+------
+str is a fundamental datatype in  python.
+It stores either int,float,bool,complex and character values also but it also stores single value at a time.
+
+str datatype has 4 symbolic notations.
+	1.single quotation ( ' ' )
+	2.double quotation ( " " )
+	3.Triple-single quotation ( ''' ''')
+	4.Triple-double quotation (""" """)
+	
+ex:
+---
+'150'
+"180.36"
+''' True '''
+""" 15+25j """
+
+
+
+id()
+help()
+dir()
+len()
+
+
+every datatype has its own class and its method
+
+datatype  class    function/method
+---------------------------------------
+int  ---> int ---> int()
+float --> float ---> float()
+bool --> bool ---> bool()
+complex --> complex ---> complex()
+str --> str ---> str()
+range --> range ---> range()
+bytes --> bytes ---> bytes()
+bytearray --> bytearray ---> bytearray()
+list --> list ---> list()
+tuple --> tuple ---> tuple()
+set --> set ---> set()
+frozenset  ---> frozenset ---> frozenset()
+dict  ---> dict ---> dict()
+None  ---> NoneType ---> None()
+
+str:
+-----
+Indexing and slicing operation:
+--------------------------------
+Indexing is nothing but assign a numbers to each element/character in the object values.
+
+In python we have 2 types of indexing
+	1.Forward indexing
+	2.Backward indexing
+	
+1.Forward indexing:
+--------------------
+In Forward indexing the PVM flows from left side(L.H.S) to Right side(R.H.s).
+Forward indexing always starts with 0(+ve).
+
+2.Backward indexing:
+------------------------
+In Backward indexing the PVM flows from Right side(R.H.S) to Left side(L.H.s).
+Backward indexing starts with -1(-ve).
+
+
+ex:
+----
+
+a  = "Deekshith"
+
+Deekshith
+012345678  ->forward indexing
+
+ D e e k s h i t h
+-9-8-7-6-5-4-3-2-1  -->Backward indexing.
+
+
+
+Slicing operation:
+----------------------
+Retrieve the chunck of chararcters/elements from the object value by using indexing is calling slicing operation.
+
+syntax-1:
+----------
+
+	objname = "value"
+	objname[:end value]
+	
+ex:
+-----
+a = "Deekshith"
+a[:5]
+
+note:
+-------
+In this syntax PVM will take the start value as 0 defaultly.
+
+syntax-2:
+-----------
+	objname = "value"
+	objname[start value:end value]
+	
+ex:
+----
+a = "Deekshith"
+a[3:7]
+
+syntax-3:
+--------------
+	objname = "value"
+	objname[start value:]
+	
+ex:
+---
+a = "Deekshith"
+a[1:]
+
+note:
+-------
+In this syntax the PVM will take last element/character indexing number as end value defaultly.
+
+syntax-4:
+----------
+this syntax is combination of syntax-1 and syntax-3.
+
+	objname = "value"
+	objname[:]
+	
+	
+ex:
+----
+xyz = "2345678"
+
+xyz[:]
+
+assignment:
+-------------
+str - '',"",''' ''',""" """
+list - []
+tuple - ()
+set - {}
+dict - {key:value}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
